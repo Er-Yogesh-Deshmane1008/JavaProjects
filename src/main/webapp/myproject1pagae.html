@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Course registration Form</h1>
+	<form action="">
+		<fieldset>
+			<legend>Personal Details:</legend>
+			<table>
+			    <tr>
+					<td><label>UserName</label></td>
+					<td><input type="text" name="UN" placeholder="Ex:Yogeshsdeshmane" size="20" maxlength="20"></td>
+				</tr>
+				<tr>
+					<td><label>First Name</label></td>
+					<td><input type="text" name="FN" placeholder="Ex:Yogesh" size="20" maxlength="20"></td>
+				</tr>
+				<tr>
+					<td><label>Last Name</label></td>
+					<td><input type="text" name="LN" placeholder="Ex:Deshmane" size="20" maxlength="20"></td>
+				</tr>
+				<tr>
+					<td><label>Mobile Number</label></td>
+					<td><input type="tel" name="mob" placeholder="Ex:997-293-9277" size="20" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td><label>Email</label></td>
+					<td><input type="Email" name="mail" size="20" placeholder="Ex:Yogeshsdeshmane@gmail.com"></td>
+				</tr>
+				<tr>
+					<td><label>Password</label></td>
+					<td><input type="Password" name="Pwd" placeholder="min 5 characters"></td>
+				</tr>
+				<tr>
+					<td><label>ConformPassword</label></td>
+					<td><input type="Password" name="CPwd" placeholder="min 5 characters"></td>
+				</tr>
+				<tr>
+					<td><label>DOB</label></td>
+					<td><input type="Date" name="dob"></td>
+				</tr>
+				<tr>
+					<td><label>Gender</label></td>
+					<td><input type="radio" name="gender"value="Male">Male <input type="radio" name="gender"value="Female">Female <input type="radio" name="gender"value="Custom">Custom</td>
+				</tr>
+				<tr>
+					<td><label>Select Country</label></td>
+					<td><select name="Country">
+						<option value="INDIA">INDIA </option>
+						<option value="USA">USA</option>
+						<option value="UK">UK</option>
+				</select></td>
+				</tr>
+				<tr>
+					<td><label>Upload picture</label></td>
+					<td><input type="file" name="pic"></td>
+				</tr>
+				<tr>
+					<td><input type="reset"></td>
+				</tr>
+			</table>
+		<!-- <p>First Name</p><input type="text" name="FN"> -->
+		</fieldset>
+
+		<fieldset>
+			<legend>Course Detailes:</legend>
+			<label>Select Course</label>
+			<select name="Course">
+			<option value="JFS">Java Full stack</option>
+			<option value="PFS">Python Full stack</option>
+			<option value="CJ">Core Java</option>
+			<option value="JDS">Java for Data Science </option>
+			<option value="PDS">Python for Data Science </option>
+			</select><br>
+			<label>Delivery mode</label> 
+			<input type="checkbox" name="mode1" value="ON">ONLINE
+			<input type="checkbox" name="mode2" value="OFF">OFFLINE 
+			<br>
+			<label>Comments</label><br>
+			<textarea rows="4" cols="40"></textarea>
+		</fieldset><br>
+		<input type="submit" >
+	</form>
+
+</body>
+</html>

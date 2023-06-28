@@ -1,0 +1,57 @@
+<web-app>
+
+	<welcome-file-list>
+		<welcome-file>index.html </welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+	<servlet-name>Servlet1</servlet-name>
+	<servlet-class>com.tap.servlet.FirstServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Servlet1</servlet-name>
+	<url-pattern>/Serv1</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>com.tap.student.Exmp</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Login</servlet-name>
+	<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>LoginProgram</servlet-name>
+	<servlet-class>classwork.Loginservlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>LoginProgram</servlet-name>
+	<url-pattern>/loginpage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>ForwardProgram</servlet-name>
+	<servlet-class>classwork.Loginforwardservlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>ForwardProgram</servlet-name>
+	<url-pattern>/loginforwaqrdservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>Pro1</servlet-name>
+	<servlet-class>classwork.Program1</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Pro1</servlet-name>
+	<url-pattern>/program</url-pattern>
+	</servlet-mapping>
+</web-app>
